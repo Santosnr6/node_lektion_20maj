@@ -5,7 +5,7 @@
 
 
 ## Liveinspelningar
-Ingen föreläsning publicerad ännu...
+- [Föreläsning måndag förmiddag](https://folkuniversitetet-se.zoom.us/rec/share/TW3i3GXKNoo06CjKdjNAonvvpSCaa4OBINsR00g-LcGNuhf__Js1FeEgPbQ9V6gH.wfa8Iff3o-FUvXRP) Lösenord: 3ku#Ku=%
 
 ## Länkar
 - [Download Nodejs](https://nodejs.org/en)
