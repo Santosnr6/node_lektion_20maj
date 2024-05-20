@@ -1,0 +1,24 @@
+RESTful Todo API
+
+1. Sätt upp projektet
+2. Konfigurera package.json
+3. Starta upp server
+4. Skapa middlewares för felhantering och loggning
+5. Lägg in API-nycklar
+6. Skapa /keys-routing
+7. Skapa middleware för autentisering av API-nyckel
+8. Skapa /todos-routing
+9. Implementera limitering av returnerade todos
+10. GET-anrop för att hämta flera och specifik todo
+11. POST-anrop för att skapa todo, validering med Joi krävs
+12. PUT-anrop för att toggla done på en todo
+13. DELETE-anrop fö att ta bort todo
+
+Insomnia-anrop
+GET key - http://localhost:8080/api/keys - Hämtar en slumpad API-nyckel
+GET all todos - http://localhost:8080/api/todos?apikey=<API-NYCKEL> - hämtar by default de fem första todouppgifterna
+GET all todos - http://localhost:8080/api/todos?apikey=<API-NYCKEL>&limit=<limit>&offset=<offset> - hämtar ut X antal todos, med start på plats offset
+GET specific todo - http://localhost:8080/api/todos/<TODO-ID>?apikey=<API-NYCKEL> - hämtar ut en specifik todo baserat på IDt
+POST new todo - http://localhost:8080/api/todos?apikey=<API-NYCKEL> - Skapar upp en ny todo baserat på innehållet in body
+PUT specific todo - http://localhost:8080/api/todos/<TODO-ID>?apikey=<API-NYCKEL> - togglar värdet i done på en specifik todo
+DELETE specific todo - http://localhost:8080/api/todos/<TODO-ID>?apikey=<API-NYCKEL> - raderar en specifik todo
