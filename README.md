@@ -14,7 +14,7 @@ Ingen föreläsning publicerad ännu...
 - [Insomnia - Download](https://insomnia.rest/download)
 - [Joi - dokumentation](https://joi.dev/api/?v=17.13.0)
 - [OpenWeatherMap - API-dokumentation](https://openweathermap.org/api/)
-- [Build REST-API](https://www.youtube.com/watch?v=pKd0Rpw7O48)(Gammal video, men mycket av det han göra är fortfarande relevant och följer den struktur vi bygger efter)
+- [Build REST-API](https://www.youtube.com/watch?v=pKd0Rpw7O48)(Gammal video, men mycket av det han gör är fortfarande relevant och följer den struktur vi bygger efter)
 
 
 
