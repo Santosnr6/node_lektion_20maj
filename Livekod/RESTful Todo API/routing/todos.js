@@ -1,6 +1,7 @@
 import { Router } from 'express';
 import { v4 as uuid } from 'uuid';
 import checkApiKey from '../middlewares/checkApiKey.js';
+import todoSchema from '../models/todoModel.js';
 
 const router = Router();
 
@@ -30,6 +31,80 @@ router.get('/', (req, res) => {
     res.json(response);
 });
 
+router.get('/:id', (req, res) => {
+    const todoId = req.params.id;
+    const todo = todos.find(todo => todo.id === todoId);
+    
+    if(todo) {
+        res.json(todo);
+    } else {
+        res.status(401).json({ message : "Todo not found" });
+    }
+});
+
+router.post('/', (req, res) => {
+    const { error } = todoSchema.validate(req.body);
+
+    if(error) {
+        return res.status(400).json({ error : error.details[0].message });
+    }
+
+    const newTodo = {
+        id: `todo-${uuid().slice(0, 5)}`,
+        task : req.body.task,
+        done : false
+    }
+
+    todos.push(newTodo);
+
+    const response = {
+        success : true,
+        status : 201,
+        newTodo : newTodo,
+        todos : todos,
+        message : "Todo successfully created"
+    }
+
+    res.json(response);
+});
+
+router.put('/:id', (req, res) => {
+    const todoId = req.params.id;
+    const todo = todos.find(todo => todo.id === todoId);
+
+    if(!todo) {
+        return res.status(401).json({ error : "Todo not found" });
+    }
+
+    todo.done = !todo.done;
+
+    const response = {
+        success : true,
+        todo : todo,
+        message : todo.done ? "Todo marked as done" : "Todo marked as not done"
+    }
+
+    res.json(response);
+});
+
+router.delete('/:id', (req, res) => {
+    const todoId = req.params.id;
+    const index = todos.findIndex(todo => todo.id === todoId);
+
+    if(index === -1) {
+        return res.status(401).json({ error : "Todo not found" });
+    }
+
+    const deletedTodo = todos.splice(index, 1);
+
+    const response = {
+        succes : true,
+        deletedTodo : deletedTodo,
+        message : "Todo successfully deleted"
+    }
+
+    res.json(response);
+})
 
 const todos = [
     {
