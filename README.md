@@ -7,6 +7,7 @@
 ## Liveinspelningar
 - [Föreläsning måndag förmiddag](https://folkuniversitetet-se.zoom.us/rec/share/TW3i3GXKNoo06CjKdjNAonvvpSCaa4OBINsR00g-LcGNuhf__Js1FeEgPbQ9V6gH.wfa8Iff3o-FUvXRP) Lösenord: 3ku#Ku=%
 - [Livekod måndag eftermiddag](https://folkuniversitetet-se.zoom.us/rec/share/1QeW8fdL6YIWYiPNsyJUOERdpMuxUAQAj0wsgI9ifApGNNy8vSeNMcOkqev72PGm.oBfLTQ4raOmmH2ol) Lösenord: xep8DU2^
+- [Livekod onsdag förmiddag](https://folkuniversitetet-se.zoom.us/rec/play/eWTBhDSa24ezg0HqOBA-ICkcq1WY9wLZL1OKx0I5uJRvrJjMxSNxnUhEdNEsxtY31b7_SwOk7EeipF2V.s1huBfSr9EK0lHSh?canPlayFromShare=true&from=share_recording_detail&continueMode=true&componentName=rec-play&originRequestUrl=https%3A%2F%2Ffolkuniversitetet-se.zoom.us%2Frec%2Fshare%2FwcroWRoh4azPXercJN4qFzzXXg2eJonl3FGCdxPVyxhsApjwhLb0QKPLktu9jes8.aWCLGvQr02D9fKiH) Lösenord: Mu+B=%3d
 
 ## Länkar
 - [Download Nodejs](https://nodejs.org/en)
